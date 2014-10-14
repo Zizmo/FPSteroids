@@ -1,0 +1,37 @@
+﻿Build started 10/14/2014 2:32:48 PM.
+     1>Project "C:\Project1\FPSteroids\Project1\Project1.vcxproj" on node 2 (Build target(s)).
+     1>InitializeBuildStatus:
+         Creating "C:\Project1\FPSteroids\Z_DELETE\FPSteroids\Debug\FPSteroids.unsuccessfulbuild" because "AlwaysCreate" was specified.
+       ClCompile:
+         All outputs are up-to-date.
+       ResourceCompile:
+         All outputs are up-to-date.
+       Link:
+         All outputs are up-to-date.
+         Project1.vcxproj -> C:\Project1\FPSteroids\Z_DELETE\FPSteroids_d.exe
+       PostBuildEvent:
+         Description: Copying binary...
+         mkdir "C:\Project1\FPSteroids\_Binary\"
+         mkdir "C:\Project1\FPSteroids\_Binary\Shaders\"
+         copy "C:\Project1\FPSteroids\Z_DELETE\FPSteroids_d.exe" "C:\Project1\FPSteroids\_Binary"
+         xcopy "C:\Project1\FPSteroids\include\GL\x86\bin" "C:\Project1\FPSteroids\_Binary" /y
+         xcopy "C:\Project1\FPSteroids\Project1\Shaders" "C:\Project1\FPSteroids\_Binary\Shaders" /y
+         
+         :VCEnd
+         A subdirectory or file C:\Project1\FPSteroids\_Binary\ already exists.
+         A subdirectory or file C:\Project1\FPSteroids\_Binary\Shaders\ already exists.
+                 1 file(s) copied.
+         C:\Project1\FPSteroids\include\GL\x86\bin\freeglut.dll
+         C:\Project1\FPSteroids\include\GL\x86\bin\glew32.dll
+         C:\Project1\FPSteroids\include\GL\x86\bin\glew32mx.dll
+         C:\Project1\FPSteroids\include\GL\x86\bin\GLFW.dll
+         4 File(s) copied
+         0 File(s) copied
+       FinalizeBuildStatus:
+         Deleting file "C:\Project1\FPSteroids\Z_DELETE\FPSteroids\Debug\FPSteroids.unsuccessfulbuild".
+         Touching "C:\Project1\FPSteroids\Z_DELETE\FPSteroids\Debug\FPSteroids.lastbuildstate".
+     1>Done Building Project "C:\Project1\FPSteroids\Project1\Project1.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:00.09
