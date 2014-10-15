@@ -44,7 +44,7 @@
     <IntDir>$(SolutionDir)Z_DELETE\$(ProjectName)\$(Configuration)\</IntDir>
     <TargetName>$(ProjectName)_d</TargetName>
     <ExecutablePath>$(SolutionDir)include\GL\x86\bin;$(ExecutablePath)</ExecutablePath>
-    <IncludePath>$(SolutionDir)include\GL\x86\include;$(IncludePath)</IncludePath>
+    <IncludePath>$(SolutionDir)include\GL\x86\include\GL;$(IncludePath)</IncludePath>
     <ReferencePath>$(VCInstallDir)atlmfc\lib;$(VCInstallDir)lib</ReferencePath>
     <LibraryPath>$(SolutionDir)include\GL\x86\lib;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
@@ -52,7 +52,7 @@
     <OutDir>$(SolutionDir)Z_DELETE\</OutDir>
     <IntDir>$(SolutionDir)Z_DELETE\$(ProjectName)\$(Configuration)\</IntDir>
     <ExecutablePath>$(SolutionDir)include\GL\x86\bin;$(ExecutablePath)</ExecutablePath>
-    <IncludePath>$(SolutionDir)include\GL\x86\include;$(IncludePath)</IncludePath>
+    <IncludePath>$(SolutionDir)include\GL\x86\include\GL;$(IncludePath)</IncludePath>
     <ReferencePath>$(VCInstallDir)atlmfc\lib;$(VCInstallDir)lib</ReferencePath>
     <LibraryPath>$(SolutionDir)include\GL\x86\lib;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
@@ -93,7 +93,7 @@ xcopy "$(SolutionDir)$(SolutionName)\Shaders" "$(SolutionDir)_Binary\Shaders" /y
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <SDLCheck>true</SDLCheck>
-      <AdditionalIncludeDirectories>$(SolutionDir)include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)include;</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <GenerateDebugInformation>true</GenerateDebugInformation>

@@ -1,0 +1,23 @@
+--
+TODO
+--
+
+Set up OpenGL [x]
+Generate window [x]
+Make shape
+Multiple instancing
+Draw player ship
+Draw asteroids (some type of hedron)
+TP camera
+Movement
+FP camera (try quaternions!)
+Draw bullets
+Bullet manager
+Asteroid destruction
+Win condition
+Big asteroid break-apart
+Interface
+Scoring
+Shaders?
+Menu system
+High score list?
