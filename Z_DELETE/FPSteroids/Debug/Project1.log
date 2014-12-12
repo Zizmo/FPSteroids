@@ -1,16 +1,23 @@
-﻿Build started 10/15/2014 1:57:01 PM.
+﻿Build started 12/12/2014 10:58:48 AM.
      1>Project "C:\Project1\FPSteroids\Project1\Project1.vcxproj" on node 2 (Build target(s)).
      1>InitializeBuildStatus:
          Creating "C:\Project1\FPSteroids\Z_DELETE\FPSteroids\Debug\FPSteroids.unsuccessfulbuild" because "AlwaysCreate" was specified.
        ClCompile:
-         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /IC:\Project1\FPSteroids\include /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D DEBUG /D _MBCS /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"C:\Project1\FPSteroids\Z_DELETE\FPSteroids\Debug\\" /Fd"C:\Project1\FPSteroids\Z_DELETE\FPSteroids\Debug\vc110.pdb" /Gd /TP /analyze- /errorReport:prompt main.cpp
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /IC:\Project1\FPSteroids\include /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D DEBUG /D _MBCS /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"C:\Project1\FPSteroids\Z_DELETE\FPSteroids\Debug\\" /Fd"C:\Project1\FPSteroids\Z_DELETE\FPSteroids\Debug\vc110.pdb" /Gd /TP /analyze- /errorReport:prompt Ship.cpp main.cpp
+         Ship.cpp
+     1>c:\project1\fpsteroids\project1\ship.cpp(37): warning C4154: deletion of an array expression; conversion to pointer supplied
+         Generating Code...
+         Compiling...
          main.cpp
+         Generating Code...
        ResourceCompile:
          All outputs are up-to-date.
        Link:
          C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Project1\FPSteroids\Z_DELETE\FPSteroids_d.exe" /INCREMENTAL /NOLOGO glew32.lib freeglut.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Project1\FPSteroids\Z_DELETE\FPSteroids_d.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Project1\FPSteroids\Z_DELETE\FPSteroids_d.lib" /MACHINE:X86 C:\Project1\FPSteroids\Z_DELETE\FPSteroids\Debug\ICON.res
          C:\Project1\FPSteroids\Z_DELETE\FPSteroids\Debug\InitShader.obj
          C:\Project1\FPSteroids\Z_DELETE\FPSteroids\Debug\main.obj
+         C:\Project1\FPSteroids\Z_DELETE\FPSteroids\Debug\Ship.obj
+         C:\Project1\FPSteroids\Z_DELETE\FPSteroids\Debug\Vertex.obj
          Project1.vcxproj -> C:\Project1\FPSteroids\Z_DELETE\FPSteroids_d.exe
        PostBuildEvent:
          Description: Copying binary...
@@ -37,4 +44,4 @@
 
 Build succeeded.
 
-Time Elapsed 00:00:01.21
+Time Elapsed 00:00:02.16

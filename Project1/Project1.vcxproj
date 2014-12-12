@@ -122,9 +122,13 @@ xcopy "$(SolutionDir)$(SolutionName)\Shaders" "$(SolutionDir)_Binary\Shaders" /y
   <ItemGroup>
     <ClCompile Include="..\include\Angel\InitShader.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="Ship.cpp" />
+    <ClCompile Include="Vertex.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="main.h" />
+    <ClInclude Include="Ship.h" />
+    <ClInclude Include="Vertex.h" />
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="..\res\ICON.rc" />

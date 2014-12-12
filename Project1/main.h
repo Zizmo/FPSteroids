@@ -14,12 +14,8 @@
 #include <iostream>
 #include <GL\x86\include\GL\glew.h>
 #include <GL\x86\include\GL\freeglut.h>
+#include "Ship.h"
 
 GLuint VBO;	// vertex buffer object
-
-// verticies!
-struct Vertex {
-	GLfloat x, y, z; // 3D coordinates
-};
 
 #endif // MAIN_H

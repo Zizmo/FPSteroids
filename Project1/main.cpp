@@ -5,8 +5,15 @@ static void RenderSceneCB()
 	// clears frame buffer using the specified color
     glClear(GL_COLOR_BUFFER_BIT);
 
+	// makes vertex data accessible by graphics pipeline
     glEnableVertexAttribArray(0);
+
+	// binds buffer to a target to be used in executing commands
+	// (what the buffer contains-- this case: an array of verticies, buffer object)
     glBindBuffer(GL_ARRAY_BUFFER, VBO);
+
+	// how to interpret data in the buffer
+	// (attribute index, number of components in attribute [X, Y, Z]
     glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, 0, 0);
 
     glDrawArrays(GL_POINTS, 0, 1);
@@ -25,11 +32,8 @@ static void InitializeGlutCallbacks()
 static void CreateVertexBuffer()
 {
 	// make an array of vertices with one vertex
-	Vertex vertices[1];
-    vertices[0] = Vertex();
-	vertices[0].x = 0.0f;
-	vertices[0].y = 0.0f;
-	vertices[0].z = 0.0f;
+	Vertex* vertices[1];
+	vertices[0] = new Vertex(0.0f, 0.0f, 0.0f);
     
 	// generates buffers
 	// (number of objects, address of buffer)
@@ -69,12 +73,12 @@ int main(int argc, char** argv)
     }
 
 	// SPECIFY SHADERS, BUFFERS, FLAGS THAT AFFECT
-	// RENDERING HERE
+	// RENDERING HERE (had so much trouble with that in school)
 
 	// sets color used when clearing frame buffer
 	// RGBA values between 0.0 and 1.0
-	// (currently cyan)
-    glClearColor(0.0f, 0.45f, 0.45f, 0.0f);
+	// (currently black)
+    glClearColor(0.0f, 0.0f, 0.0f, 0.0f);
 
     CreateVertexBuffer();
 
